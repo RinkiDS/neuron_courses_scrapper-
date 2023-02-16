@@ -1,0 +1,24 @@
+<body>
+<title>Courses </title>
+
+<h1 style="text-align: center">iNeuron Courses</h1>
+ <form id ="submitForm" method="POST" action="{{ url_for('get_course_details')}}">
+<table>
+
+      <tr>
+
+        {% for course in courses %}
+
+              <td><input type="radio" name="options" value="{{ course}}">{{ course}}</td>
+
+
+
+        </tr>
+           {% endfor %}
+
+
+</table><br><br>
+     <input type="submit" name="" value="Get Course Details">
+</form>
+</body>
+

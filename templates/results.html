@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Course Details Page</title>
+</head>
+
+<body>
+ <form action="{{ url_for('do_all_operations')}}" method="post">
+     <input type="hidden" name="course" value="{{course_data['Course_name']}}">
+   <h3>iNeuron Courses Data</h3>
+
+          <table border="10">
+              <tr>
+                 <th>Course Name</th>
+                 <th>Description</th>
+                 <th>Pricing</th>
+                  <th>Syllabus</th>
+                 <th>Language</th>
+                 <th>Requirements</th>
+
+
+              </tr>
+          <tr>
+              <td>{{course_data['Course_name']}}</td>
+             <td>{{course_data['Description']}}</td>
+             <td>{{course_data['Pricing']}}</td>
+             <td><ul style="list-style-type:square;">{% for syllabus in course_data['Syllabus'] %}
+                 <li>{{syllabus}}</li><br>{% endfor %}</ul> </td>
+              <td>{{course_data['Language']}} </td>
+              <td><ul style="list-style-type:square;">{% for requirement in course_data['Requirements'] %}
+                  <li>{{requirement}}</li><br>{% endfor %}</ul> </td>
+
+          </tr>
+          </table><br><br>
+
+     <button type="submit">DO All OPERATIONS</button>
+     <button type="submit" formaction="{{ url_for('save_data_to_pdf')}}">SAVE DATA TO PDF</button>
+     <button type="submit" formaction="{{ url_for('save_data_to_S3')}}">UPLOAD PDF TO AWS S3 Bucket</button>
+     <button type="submit" formaction="{{ url_for('save_data_to_mongo_db')}}">SAVE DATA IN MONGODB</button>
+        <button type="submit" formaction="{{ url_for('save_data_to_mysql')}}">SAVE DATA IN MYSQL</button>
+    </form>
+
+
+</body>
+
+</html>
