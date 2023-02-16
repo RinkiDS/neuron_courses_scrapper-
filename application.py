@@ -27,12 +27,12 @@ renders the index.html template with the courses variable
 
 @app.route("/", methods=['GET'])
 def home():
-    #app.logger.info('Processing all courses Request')
-    #site_url = app.config["INEURON_SITE_URL"]
-    #courses = course_util.get_all_course(site_url)
+    app.logger.info('Processing all courses Request')
+    site_url = app.config["INEURON_SITE_URL"]
+    courses = course_util.get_all_course(site_url)
     # courses = courses[15:25]
-    #return render_template('index.html', courses=courses)
-    return render_template('base.html', result_text="Saved Data to SQL")
+    return render_template('index.html', courses=courses)
+    #return render_template('base.html', result_text="Saved Data to SQL")
 
 
 """It takes the course name from the user and passes it to the get_course_details function in the course_util.py 
