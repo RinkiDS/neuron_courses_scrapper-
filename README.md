@@ -1,10 +1,12 @@
 <div id="top"></div>
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  <a href="https://github.com/RinkiDS">
+     
+  </a>
 
 <h3 align="center">Ineuron Courses </h3>
 
@@ -76,19 +78,15 @@
 
 
 <!-- CONTACT -->
-Contact
-Linked in <a href=https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page>
-Gmail < a href=rinki.sharma@gmail.com>
-[GitHub]< a href=https://github.com/RinkiDS)>
-
+Contact<br>
+[Linkedin] <a href=https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page></a>
+[Gmail] < a href=rinki.sharma@gmail.com></a><br>
+[GitHub]< a href=https://github.com/RinkiDS)></a>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
      Acknowledgments
-
-* [iNeuron](https://github.com/iNeuronai)
-* [Webscrapper Demo given in class](https://github.com/iNeuronai/sudhreviewscrap)
 
 
 
@@ -106,6 +104,6 @@ Gmail < a href=rinki.sharma@gmail.com>
 [flask]: https://flask.palletsprojects.com/en/2.1.x/
 
 <!--contact-->
-[reach_linkedin]: https://www.linkedin.com/in/aravind-selvam/
-[reach_gmail]: mailto:aravind9722@gmail.com?subject=Github
-[reach_outlook]: mailto:aravind_selvam@outlook.com
+[reach_linkedin]: https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page
+[reach_gmail]: mailto:rinki.sharma@gmail.com?subject=Github
+
