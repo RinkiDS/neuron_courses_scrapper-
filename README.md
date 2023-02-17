@@ -61,8 +61,8 @@
 
 
 ### ✨App Screenshot
-![Course List Screen Shot](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/static/image/Screenshot%202023-02-17%20115810.png)<br>
-![Course Details Screen Shot](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/static/image/Screenshot%202023-02-17%20120009.png)
+![Course List Screen Shot](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/static/image/Screenshot%202023-02-17%20115810.png)<br><br>
+![Course Details Screen Shot](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/static/image/Screenshot%202023-02-17%20120009.png)<br><br><br>
 ![Sample PDF File](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/pdfs/Face%20Swap%20Application.pdf)
 
 
