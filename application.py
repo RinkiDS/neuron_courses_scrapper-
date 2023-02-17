@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 from flask_cors import CORS, cross_origin
 from logging.config import fileConfig
+from flask_paginate import Pagination, get_page_args
 
 from utils.mongodb_connection_util import mongodb_connection_util as mongoc
 from utils.mongodb_operations_util import mongodb_opertaions_util as mongoo
@@ -30,9 +31,22 @@ def home():
     app.logger.info('Processing all courses Request')
     site_url = app.config["INEURON_SITE_URL"]
     courses = course_util.get_all_course(site_url)
-    # courses = courses[15:25]
-    return render_template('index.html', courses=courses)
-    #return render_template('base.html', result_text="Saved Data to SQL")
+    page, per_page, offset = get_page_args(page_parameter='page',
+                                           per_page_parameter='per_page')
+    total = len(courses)
+    pagination_courses = get_pagination_courses(courses,offset=offset, per_page=per_page)
+    pagination = Pagination(page=page, per_page=per_page, total=total,
+                            css_framework='bootstrap4')
+    return render_template('index.html',
+                           courses=pagination_courses,
+                           page=page,
+                           per_page=per_page,
+                           pagination=pagination,
+                           )
+
+def get_pagination_courses(courses,offset=0, per_page=10):
+
+    return courses[offset: offset + per_page]
 
 
 """It takes the course name from the user and passes it to the get_course_details function in the course_util.py 
@@ -72,7 +86,7 @@ def save_data_to_pdf():
     course_data = course_util.get_course_details(ineuron_course_url, course_name)
     pdf_util.create_pdf(course_data)
 
-    return render_template('base.html', result_text="Save Data to PDF")
+    return render_template('base.html', result_text="Saved Data to PDF")
 
 
 """It takes the course name from the user, fetches the course data from the ineuron website, and saves it to the 

@@ -7,3 +7,4 @@ gunicorn==20.1.0
 FPDF==1.7.2
 boto3==1.23.10
 mysql-connector-python==8.0.32
+flask-paginate

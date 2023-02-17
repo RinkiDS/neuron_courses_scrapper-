@@ -1,24 +1,39 @@
-<body>
-<title>Courses </title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
-<h1 style="text-align: center">iNeuron Courses</h1>
- <form id ="submitForm" method="POST" action="{{ url_for('get_course_details')}}">
-<table>
-
-      <tr>
-
-        {% for course in courses %}
-
-              <td><input type="radio" name="options" value="{{ course}}">{{ course}}</td>
-
-
-
-        </tr>
-           {% endfor %}
-
-
-</table><br><br>
-     <input type="submit" name="" value="Get Course Details">
-</form>
-</body>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>iNeuron Courses</title>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  </head>
+  <body>
+    <form id ="submitForm" method="POST" action="{{ url_for('get_course_details')}}">
+    <div class="container">
+      {{ pagination.links }}
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for course in courses %}
+            <tr>
+              <td>{{ loop.index + (page - 1) * per_page }}</td>
+              <td>{{ course }}</td>
+                <input type="hidden" value="{{ course }}" name="options">
+                <td><input type="submit" name="" value="Get Course Details"></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {{ pagination.links }}
+    </div></form>
+  </body>
+</html>
