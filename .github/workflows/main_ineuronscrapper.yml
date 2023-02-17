@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'ineuronscrapper'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5B209B3BA5D54B9398F5083F67BB2734 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F811FD156BCD4C46B9CED20A86891029 }}
