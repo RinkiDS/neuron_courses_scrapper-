@@ -61,10 +61,10 @@ def get_course_details():
     ineuron_course_url = app.config["INEURON_COURSE_URL"]
     course_data = dict()
     course_name = ""
-    print(request.method,flush=True)
+    #print(request.method,flush=True)
     if request.method == "POST":
         course_name = request.form["options"]
-        print(course_name,flush=True)
+        #print(course_name,flush=True)
         app.logger.info("Getting info for course " + course_name)
         course_data = course_util.get_course_details(ineuron_course_url, course_name)
 
