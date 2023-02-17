@@ -61,7 +61,11 @@
 
 
 ### ✨App Screenshot
-[![Product Name Screen Shot](https://raw.githubusercontent.com/aravind9722/Flask_app_project/main/static/image/App%20screenshot.png)](https://webscrapper-project-aravind.herokuapp.com/)
+[![Course List Screen Shot](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/static/image/Screenshot%202023-02-17%20115810.png)]<br>
+[![Course Details Screen Shot](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/static/image/Screenshot%202023-02-17%20120009.png)]
+[![Sample PDF File](https://github.com/RinkiDS/neuron_courses_scrapper-/blob/main/static/image/Screenshot%202023-02-17%20115810.png)]
+
+
 
 
 
@@ -79,9 +83,9 @@
 
 <!-- CONTACT -->
 Contact
-<!--contact-->
-[reach_linkedin]: https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page
-[reach_gmail]: mailto:rinki.sharma@gmail.com?subject=Github
+
+<a href="https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page"></a>LinkedIN Contact<br>
+<a href="mailto:rinki.sharma@gmail.com?subject=Github"/>Gmail Contact
 
 
 <!-- ACKNOWLEDGMENTS -->
