@@ -78,11 +78,10 @@
 
 
 <!-- CONTACT -->
-Contact<br>
-[Linkedin] <a href=https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page></a>
-[Gmail] < a href=rinki.sharma@gmail.com></a><br>
-[GitHub]< a href=https://github.com/RinkiDS)></a>
-<p align="right">(<a href="#top">back to top</a>)</p>
+Contact
+<!--contact-->
+[reach_linkedin]: https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page
+[reach_gmail]: mailto:rinki.sharma@gmail.com?subject=Github
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -103,7 +102,5 @@ Contact<br>
 [mongodb]: https://www.mongodb.com/
 [flask]: https://flask.palletsprojects.com/en/2.1.x/
 
-<!--contact-->
-[reach_linkedin]: https://www.linkedin.com/in/rinki-sharma-79102119/?trk=public-profile-join-page
-[reach_gmail]: mailto:rinki.sharma@gmail.com?subject=Github
+
 
