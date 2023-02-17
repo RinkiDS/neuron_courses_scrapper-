@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
   </head>
   <body>
-    <form id ="submitForm" method="POST" action="{{ url_for('get_course_details')}}">
+
     <div class="container">
       {{ pagination.links }}
       <div class="table-responsive">
@@ -25,15 +25,15 @@
             {% for course in courses %}
             <tr>
               <td>{{ loop.index + (page - 1) * per_page }}</td>
-              <td>{{ course }}</td>
+              <td>{{ course }}</td> <form id ="submitForm" method="POST" action="{{ url_for('get_course_details')}}">
                 <input type="hidden" value="{{ course }}" name="options">
-                <td><input type="submit" name="" value="Get Course Details"></td>
+                <td><input type="submit" name="" value="Get Course Details"></td></form>
             </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
       {{ pagination.links }}
-    </div></form>
+    </div>
   </body>
 </html>
